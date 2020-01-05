@@ -74,7 +74,7 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-aside" style={{ position: "relative" }}>
-                        <div className="aside-wrapper shadow-sm " style={{ position: "fixed" }}>
+                        <div className="aside-wrapper shadow-sm " >
                             <div className="profile-content " >
                                 <UserOnline/>
                             </div>

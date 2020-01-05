@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import '../css/editpost.css';
 import {_editPost} from '../../src/actions/user'
 import { connect } from 'react-redux';
+import NavBar from './Navbar'
 
 class editPost extends Component {
     constructor(props) {
@@ -35,27 +36,9 @@ class editPost extends Component {
         console.log({id});
         return (
             <>
-                <div className="header__content">
-                    <nav className="ul-style">
-                        <ul >
-                            <li className="active"><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Lời mời kết bạn</a></li>
-                            <li><a href="#">Tin nhắn</a></li>
-                            <li><a href="#">Thông báo</a></li>
-                            <li><a href="#">Cài đặt</a></li>
-                            <li><button className="btn btn-default btn_logout" onClick={() => this._handleLogout()}>Đăng xuất</button></li>
-
-
-                        </ul>
-                        <div style={{ float: "right", marginRight: "20px" }}>
-                            <input id="search-user" placeholder="search" type="text" />
-                            <button className="btn btn-primary" type="submit">Search</button>
-                        </div>
-
-                    </nav>
-                </div>
+                <NavBar/>
                 <div className="wrapper wrapperEP">
-                    <div className="card cardEP">
+                    <div className="card cardEP shadow rounded">
                         <div className="card-header card-headerEP">
                             <strong>Chỉnh sửa</strong>
                         </div>

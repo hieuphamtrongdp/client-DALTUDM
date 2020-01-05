@@ -66,6 +66,7 @@ class Update_Info extends Component {
                                     id="phone"
                                     type="text"
                                 />
+                                <br/>
                                 <label htmlFor="password">Nhập số điện thoại</label>
                             </div>
                             {/* <ul>
